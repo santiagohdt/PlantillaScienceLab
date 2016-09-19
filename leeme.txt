@@ -1,0 +1,1 @@
+Ingeniero buenas tardes , acá le adjunto la plantilla que diseñé desde cero , sin ningún framework, pero sé trabajar con materialize y bootstrap, espero pueda servir , en caso de que necesite ver algo de mayor nivel , me escribe por favor, muchas gracias.
