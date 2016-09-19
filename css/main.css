@@ -1,0 +1,427 @@
+
+header{
+
+	background-image: url("../imgs/top_bg.gif");
+	height: 156px;
+}
+
+body{
+	margin-left: 10%;
+	margin-right: 10%;
+}
+#img1 {
+	margin-left: 2%;
+	float: left;
+	margin-top: 1%;
+	width: 10%;
+
+}
+#logo {
+
+	margin-top: 5%;
+	width: 20%;
+}
+
+.header{
+	height: 100%;
+	display: inline-block;
+}
+
+.inline{
+	display: inline;
+}
+
+
+.list-header li {
+	display: inline;
+	text-align: center;
+	margin-right: 7%;
+
+
+}
+.nav-header{
+	display: inline-block;
+	width: 60%;
+	float: right;
+	margin-top: 6%;
+	
+}
+.list-header{
+	display: inline;
+	width: 70%;
+}
+.text-nav {
+	color: white;
+	font-family: arial;
+	font-size: 18px;
+	text-decoration: none;
+}
+
+.up {
+	background-image: url("../imgs/header.gif");
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 395px;
+
+}
+.first-article {
+	width: 25%;
+	margin-left: 5%;
+	padding-top: 4%;
+}
+.a-nav-medium{
+	text-decoration: none;
+}
+#greetings {
+	font-size: 25px;
+	color: blue;
+	margin-bottom: 1%;
+}
+
+#sub-greetings {
+	
+	margin-top: 0;
+	font-size: 20px;
+	color:  gray;
+
+}
+#p-greetings {
+	color: gray;
+	text-align:justify;
+}
+#header {
+	width: 100%;
+}
+.down {
+	background: #7a9b2a;
+}
+
+.nav-down ul li {
+	
+	display: inline-block;
+	text-decoration: none;
+	margin-right: 5%;
+
+}
+.div-down {
+	padding-top: 1%;
+	background-color: #668122;
+}
+.nav-down ul li a {
+	margin-left:3.5%; 
+	color: white;
+}
+#imagen-div {
+	float: left;
+	margin-left: 7%;
+	
+}
+
+#welcome {
+	color: white;
+	font-family: helvetica;
+}
+
+.two-div {
+
+	height: 150px;
+	width: 90%;
+	color:white;
+}
+#nucleo{
+	color: white;
+	float: left;
+	margin-left: 7%;
+}
+.footer-position-up{
+
+	float: left;
+	width: 34%;
+	
+	background-color: #6E8F24;
+	height: 26%;
+	
+}
+.footer-position-center{
+
+	float: left;
+	width: 33%;
+	background-color: #668122;
+	height: 26%;
+
+}
+.footer-position-down{
+
+	float: left;
+	width: 33%;
+	background-color: #586F1F;
+	height: 26%;
+
+}
+
+
+ .article-footer {
+ float: left;
+
+ }
+.bullet {
+	float: left;
+	margin-left: 6%;
+}
+#img3 {
+	float: left;
+	margin-right: 3%;
+	margin-left: 3%;
+
+}
+
+footer {
+	background-color: #7a9b2a;
+	width: 100%;
+	display: inline-block;
+}
+#img4 {
+	float: left;
+	margin-left: 3%;
+}
+.h3-science {
+	margin-top: 0;
+	margin-bottom: 0;
+	color: white;
+
+
+}
+#left-a {
+	text-decoration:none;
+	color: white;
+}
+#left-p {
+	margin-left: 2%;
+	color: white;
+}
+.h3-center {
+	margin-left:2.5%;
+	color: white; 
+	margin-top: 0;
+}
+
+
+#down-p {
+	margin-left: 8.5%;
+	color: white;
+}
+#p-center {
+	color:white;
+	margin-left: 3%;
+	margin-right: 3%;
+	text-align: justify;
+	margin-bottom: 13px;
+}
+
+#down-a {
+
+	color: white;
+	text-decoration: none;
+
+}
+
+.title-h3 {
+		padding-top: 0.5%;
+		color: white;
+}
+
+
+
+.a-down-footer {
+	color: white;
+	padding-left: 10%;
+	margin-left: 0;
+}
+
+#small {
+	color:white;
+	float: right;
+	margin-right: 12px;
+}
+.footer-down {
+	
+} 
+
+.clear-float {
+	clear: both;
+}
+
+.container {
+	
+}
+
+.icon {
+	visibility: hidden;
+	display: none;
+}
+
+#h3-welcome {
+	width: 85%;
+}
+
+@media only screen and (min-width : 321px) and (max-width: 767px) {
+
+/* su codigo de CSS para moviles**/
+	.icon {
+	visibility: visible;
+}
+
+.first-article {
+	width: 90%;
+}
+
+    ul.list-header li:not(:first-child) {display: none;} /*esconde los li del menu original menos el primero*/
+    ul.list-header li.icon {/*hacemos que el boton aparezca y lo enviamos a la derecha*/
+        float: right;
+        display: inline-block;
+      }
+    ul.list-header.responsive{ /*cuando se agregue la clase responsive al menu, si posicionamiento será relativo*/
+        position: relative;
+    }
+ 
+    ul.list-header.responsive li {/*cuando se agregue la clase responsive al menu los  li ya no flotaran encaso de hacerlo y se mostraran en linea*/
+        float: none;
+        display: inline;
+    }
+    ul.list-header.responsive li.icon { /*modificamos la ubicacion del boton a la derecha  superior*/
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    ul.list-header.responsive li a{ /* Hacemos que los enlaces <a> se muestren en bloque y se alineen a la izquierda*/
+        display: block;
+           text-align: left;
+    }
+
+    .movil-img {
+    	display: none;
+    	visibility: hidden;
+    }
+    #list-principal {
+    	padding-left: 0px;
+    }
+
+      #list-principal li a{
+    	color: white;
+	font-size: 13px;
+    }
+
+    .a-nav-medium {
+    	text-decoration:none;
+    }
+
+    .nav-down ul li {
+    	margin-right: 0;
+    }
+
+    #welcome {
+    	font-size: 18px;
+    	margin-left: 7%
+    }
+
+    .two-div {
+    height: 190px;
+    padding-bottom: 20px;
+    margin-left: 7%;
+}
+
+#h3-welcome {
+	width: 100%;
+}
+
+.footer-position-up {
+    width: 100%;
+    background-color: #6E8F24;
+    height: 34%;
+}
+
+.footer-position-center {
+    width: 100%;
+    background-color: #668122;
+    height: 32%;
+
+}
+
+.footer-position-down {
+    width: 100%;
+    background-color: #586F1F;
+    height: 33%;
+}
+.title-h3 {
+    padding-top: 0.5%;
+    color: white;
+    margin-left: 7%;
+}
+
+.article-footer {
+
+    margin-left: 7%;
+}
+
+#down-p {
+    margin-left: 7%;
+}
+}
+@media only screen and (min-width : 768px) and (max-width: 1024px) {
+
+	#img1 {
+		display: none;
+	}
+	.nav-header {
+		display: inline-block;
+	width: 70%;
+	margin-top: 3%;
+	}
+
+	.list-header {
+	display: inline-block;
+	width: 560px;
+	}
+	.list-header li {
+
+	display: inline;
+	text-align: center;
+	margin-right: 3%;
+	}
+
+	.first-article {
+		padding-top: 3%;
+	}
+	.up {
+	background-image: url("../imgs/header-tablet.gif");
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 308px;
+
+	}
+	#greetings {
+		font-size: 20px;
+	}
+	#sub-greetings {
+		font-size: 15px;
+		margin-bottom: 10px;
+	}
+	
+	#h5-header {
+		margin-top: 2px;
+	}
+
+.clear {
+	clear: both;
+	}
+}
+
+
+
+
+
+
